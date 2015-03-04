@@ -1,5 +1,5 @@
 /*
- *Program- Program that prints hello world
+ *Hello - Program that prints hello world
  *
  * Created by : Moses Olawoyin <m.bastford@gmail.com>
  * Date : 04 March 2015
