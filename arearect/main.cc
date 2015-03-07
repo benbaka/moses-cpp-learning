@@ -14,10 +14,10 @@ int main (int argc, char *argv[])
     int width;
     int area;
 
-    cout << "Enter the height of the rectangle: " << endl;
+    cout << "Enter the height of the rectangle: ";
     cin >> height;
 
-    cout << "Enter the width of the rectangle: " << endl;
+    cout << "Enter the width of the rectangle: ";
     cin >> width;
 
     area = width * height;
