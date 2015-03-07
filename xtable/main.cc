@@ -12,13 +12,13 @@ int main(int argc, char *argv[])
     }
     cout << endl;
 
-    for( int x = 0; x<=12; ++x)
+    for(int x = 0; x<=12; ++x)
     {
         cout << "-----+";
     }
     cout << endl;
 
-    for( int y = 1; y<=12; ++y)
+    for(int y = 1; y<=12; ++y)
     {
         cout<<setw(5)<< y << "|";
 
