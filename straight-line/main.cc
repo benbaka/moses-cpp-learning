@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     cout <<"Enter y2" << endl;
     cin >> y2;
 
-    m = y2-y1/x2-x1;
+    m =(y2-y1)/(x2-x1);
 
     cout << "The gradient of the line is :" << m << endl;
     cout << "The equation of the line is :" << "y =" << m << * "x+b" << endl;
