@@ -16,7 +16,7 @@ int main (int argc, char *argv[])
     cout << "What is your name? ";
     cin >> name;
 
-   if(name != " ")
+   if(name != "")
    {
        cout << "How are you, " <<  name <<endl;
    } 
