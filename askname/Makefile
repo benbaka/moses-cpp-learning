@@ -1,2 +1,4 @@
+CXX = c++
+
 all:
-	c++ main.cc -o greeting
+	$(CXX) -o greeting main.cc

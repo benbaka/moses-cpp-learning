@@ -1,2 +1,4 @@
+CXX = C++
+
 all:
-	c++ main.cc -o areatri
+	$(CXX) -o areatri main.cc

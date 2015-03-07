@@ -1,2 +1,4 @@
+CXX = C++
+
 all:
-	c++ main.cc -o equation
+	$(CXX) -o equation main.cc

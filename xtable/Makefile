@@ -1,2 +1,4 @@
+CXX = C++
+
 all:
-	c++ main.cc -o xtable
+	$(CXX) -o xtable main.cc
