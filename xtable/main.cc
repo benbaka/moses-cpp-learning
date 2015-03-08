@@ -4,7 +4,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    cout << "      |";
+    cout << "     |";
     for (int x = 1; x<=12; ++x)
     {
         cout <<setw(5)<< x <<"|";
