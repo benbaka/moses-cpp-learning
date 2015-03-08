@@ -3,12 +3,12 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    int x1;
-    int y1;
-    int x2;
-    int y2;
-    int m;
-    int b;
+    double x1;
+    double y1;
+    double x2;
+    double y2;
+    double m;
+    double b;
 
     cout << "Enter x1: ";
     cin >> x1;
