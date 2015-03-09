@@ -8,7 +8,7 @@
  */
 
 #include <iostream>
-using namespace std;
+
 
 int main ( int argc, char *argv[])
 {
@@ -16,15 +16,15 @@ int main ( int argc, char *argv[])
     int height;
     int area;
 
-    cout <<"Enter the height" << endl;
-    cin >> height;
+    std::cout <<"Enter the height" << std::endl;
+    std::cin >> height;
 
-    cout <<"Enter the width"<< endl;
-    cin >> width;
+    std::cout <<"Enter the width"<< std::endl;
+    std::cin >> width;
 
     area = (height * width)/2;
 
-    cout << "The area of the triangle is :"<< area << endl;
+    std::cout << "The area of the triangle is :"<< area << std::endl;
 
     return 0;
 }

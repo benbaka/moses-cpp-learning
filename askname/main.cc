@@ -7,22 +7,22 @@
  *
  */
 #include <iostream>
-using namespace std;
+
 
 int main (int argc, char *argv[])
 {
-    string name;
+    std::string name;
 
-    cout << "What is your name? ";
-    cin >> name;
+    std::cout << "What is your name? ";
+    std::cin >> name;
 
    if(name != "")
    {
-       cout << "How are you, " <<  name <<endl;
+       std::cout << "How are you, " <<  name <<std::endl;
    } 
    else
    {
-       cout << "Howdy, coward" << endl;
+       std::cout << "Howdy, coward" << std::endl;
 
    }
 

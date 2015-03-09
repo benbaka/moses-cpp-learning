@@ -6,7 +6,6 @@
  *  Date - 05 March 2015.
  */
 #include <iostream>
-using namespace std;
 
 int main (int argc, char *argv[])
 {
@@ -14,15 +13,15 @@ int main (int argc, char *argv[])
     int width;
     int area;
 
-    cout << "Enter the height of the rectangle: ";
-    cin >> height;
+    std::cout << "Enter the height of the rectangle: ";
+    std::cin >> height;
 
-    cout << "Enter the width of the rectangle: ";
-    cin >> width;
+    std::cout << "Enter the width of the rectangle: ";
+    std::cin >> width;
 
     area = width * height;
 
-    cout << " The Area of the rectangle is:" << area << endl;
+    std::cout << " The Area of the rectangle is:" << area << std::endl;
 
     return 0;
 
