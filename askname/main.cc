@@ -14,7 +14,7 @@ int main (int argc, char *argv[])
     std::string name;
 
     std::cout << "What is your name? ";
-    std::cin >> name;
+    std::getline( std::cin, name);
 
    if(name != "")
    {
