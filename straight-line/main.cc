@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 int main(int argc, char *argv[])
 {
@@ -10,32 +9,34 @@ int main(int argc, char *argv[])
     double m;
     double b;
 
-    cout << "Enter x1: ";
-    cin >> x1;
+    std::cout << "Enter x1: ";
+    std::cin >> x1;
 
-    cout << "Enter y1: " ;
-    cin >>y1;
+    std::cout << "Enter y1: " ;
+    std::cin >>y1;
 
-    cout << "Enter x2: ";
-    cin >> x2;
+    std::cout << "Enter x2: ";
+    std::cin >> x2;
 
-    cout <<"Enter y2: " ;
-    cin >> y2;
+    std::cout <<"Enter y2: " ;
+    std::cin >> y2;
 
-      m =(y2-y1)/(x2-x1);
-      b = y1 - m*x1;
+     // m =(y2-y1)/(x2-x1);
+     // b = y1 - m*x1;
 
-    if(m == 0)
+    if(y1 == y2)
     {
-        std::cout << "y = " << b << std::endl;
+        std::cout << "y = " << y1 << std::endl;
     }
-    else
+    else if(x1 == x2)
     {
-        std::cout << "y = " << m << "x + " << b << std::endl;
-
+        std::cout << "x = " << x1 << std::endl;
     }
 
-    cout << "The gradient of the line is :" << m << endl;
-    cout << "The intercept of the line is : " << b << endl;
-    cout << "The equation of the line is :" << "y =" << m << * "x"<< "+" << b << endl;
+
+   // cout << "The gradient of the line is :" << m << endl;
+   // cout << "The intercept of the line is : " << b << endl;
+   // cout << "The equation of the line is :" << "y =" << m << * "x"<< "+" << b << endl;
+
+    return 0;
 }
