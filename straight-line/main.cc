@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 int main(int argc, char *argv[])
 {
@@ -21,9 +22,6 @@ int main(int argc, char *argv[])
     std::cout <<"Enter y2: " ;
     std::cin >> y2;
 
-     // m =(y2-y1)/(x2-x1);
-     // b = y1 - m*x1;
-
     if(y1 == y2)
     {
         std::cout << "y = " << y1 << std::endl;
@@ -32,11 +30,41 @@ int main(int argc, char *argv[])
     {
         std::cout << "x = " << x1 << std::endl;
     }
+    else
+    {
+        m = (y2-y1)/(x2-x1);
+        b = y1 - m*x1;
 
+        char operator ='+';
+        if (b<0)
+        {
+            operator ='-';
+            b = std::abs(b);
+        }
+     if( m == 1 && b==0)
+         {
+             std::cout << "y = x " <<std::endl;
+         }
+     else if( m == 1)
+     {
+         std::cout << " y = x+ " << b << std::endl;
 
-   // cout << "The gradient of the line is :" << m << endl;
-   // cout << "The intercept of the line is : " << b << endl;
-   // cout << "The equation of the line is :" << "y =" << m << * "x"<< "+" << b << endl;
+     }
+     else if(b==0)
+     {
+         std::cout << "y = x" * << m << std::endl;
+
+     }
+     else
+     {
+         std::cout << "y = " <<  m << * "x"<< " + " << b << std::endl;
+     }
+    
+   }
+    
+    // std::cout << "The gradient of the line is :" << m << std::endl;
+    // std::cout << "The intercept of the line is : " << b << std::endl;
+    //std::cout << "The equation of the line is :" << "y =" << m << * "x"<< "+" << b << std::endl;
 
     return 0;
 }
