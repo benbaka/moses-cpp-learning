@@ -35,10 +35,10 @@ int main(int argc, char *argv[])
         m = (y2-y1)/(x2-x1);
         b = y1 - m*x1;
 
-        char operator ='+';
+        char op ='+';
         if (b<0)
         {
-            operator ='-';
+            op ='-';
             b = std::abs(b);
         }
      if( m == 1 && b==0)
@@ -47,24 +47,20 @@ int main(int argc, char *argv[])
          }
      else if( m == 1)
      {
-         std::cout << " y = x+ " << b << std::endl;
+             std::cout << " y = x"<<op << b << std::endl;
 
      }
      else if(b==0)
      {
-         std::cout << "y = x" * << m << std::endl;
+         std::cout << "y = x" << m << std::endl;
 
      }
      else
      {
-         std::cout << "y = " <<  m << * "x"<< " + " << b << std::endl;
+         std::cout << "y = " <<  m << * "x"<< op << b << std::endl;
      }
     
    }
     
-    // std::cout << "The gradient of the line is :" << m << std::endl;
-    // std::cout << "The intercept of the line is : " << b << std::endl;
-    //std::cout << "The equation of the line is :" << "y =" << m << * "x"<< "+" << b << std::endl;
-
     return 0;
 }
