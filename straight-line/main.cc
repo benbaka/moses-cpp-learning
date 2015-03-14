@@ -41,24 +41,26 @@ int main(int argc, char *argv[])
             op ='-';
             b = std::abs(b);
         }
-     if( m == 1 && b==0)
+        
+        if( m == 1 && b==0)
          {
              std::cout << "y = x " <<std::endl;
          }
-     else if( m == 1)
-     {
+        else if( m == 1)
+        {
              std::cout << " y = x"<<op << b << std::endl;
 
-     }
-     else if(b==0)
-     {
-         std::cout << "y = x" << m << std::endl;
+        }
+        else if(b==0)
+        {
+            
+             std::cout << "y = x" << m << std::endl;
 
-     }
-     else
-     {
-         std::cout << "y = " <<  m << * "x"<< op << b << std::endl;
-     }
+        }
+       else
+       {
+           std::cout << "y = " <<  m << * "x"<< op << b << std::endl;
+       }
     
    }
     
