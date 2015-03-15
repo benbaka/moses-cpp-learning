@@ -3,17 +3,18 @@
 
 class Point
 {
-    int x;
-    int y;
+    int m_x;
+    int m_y;
 
     public:
-        void set_x(int x, int y);
+        void set_x(int , int );
         int get_x();
 
-        void set_y(int x, int y);
+        void set_y(int , int );
         int get_y();
 
 };
+
 
 int main (int argc, char* argv[])
 {
