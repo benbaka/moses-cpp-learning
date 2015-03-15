@@ -3,17 +3,28 @@
 
 class Point
 {
-    int m_x;
-    int m_y;
+    double m_x;
+    double m_y;
 
     public:
-        void set_x(int , int );
+        Point();
+        Point(double x, double y);
+
+        void set_x(double , double );
         int get_x();
 
-        void set_y(int , int );
+        void set_y(double , double );
         int get_y();
 
 };
+int Point::get_x()
+{
+    return m_x;
+}
+int Point::get_y()
+{
+    return m_x;
+}
 
 
 int main (int argc, char* argv[])
