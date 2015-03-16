@@ -7,22 +7,15 @@ inline double speed(double distance, double time)
 
 double read_double(std::string prompt )
 {
-    double distance;
+    double value;
 
     std::cout << prompt << " : ";
-    std::cin >> distance;
+    std::cin >> value;
 
-    return distance;
+     return value;
+
 }
 
-double read_double_time(std::string prompt)
-{
-    double time;
-    std::cout << prompt << ":";
-    std::cin >> time;
-
-    return time;
-}
 
 int main (int argc, char* argv[])
 {
@@ -38,5 +31,4 @@ int main (int argc, char* argv[])
     
     std::cout << "The average speed of the object is: " << average_speed << "m/s" <<std::endl;
     
-
 }
