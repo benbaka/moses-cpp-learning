@@ -18,6 +18,11 @@ int read_int(std::string prompt)
 
 }
 
+int calc_area(int height, int width)
+{
+    return height * width;
+}
+
 int main (int argc, char *argv[])
 {
     int height;
@@ -27,7 +32,7 @@ int main (int argc, char *argv[])
     height = read_int("Enter the height: ");
     width = read_int("Enter the width: ");
 
-    area = width * height;
+    area = calc_area( height, width);
 
     std::cout << " The Area of the rectangle is:" << area << std::endl;
 
