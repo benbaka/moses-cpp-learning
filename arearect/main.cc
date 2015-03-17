@@ -7,17 +7,25 @@
  */
 #include <iostream>
 
+int read_int(std::string prompt)
+{
+    int value;
+
+    std::cout << prompt <<" : ";
+    std::cin >> value;
+
+    return value;
+
+}
+
 int main (int argc, char *argv[])
 {
     int height;
     int width;
     int area;
 
-    std::cout << "Enter the height of the rectangle: ";
-    std::cin >> height;
-
-    std::cout << "Enter the width of the rectangle: ";
-    std::cin >> width;
+    height = read_int("Enter the height: ");
+    width = read_int("Enter the width: ");
 
     area = width * height;
 
