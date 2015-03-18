@@ -8,6 +8,13 @@
  */
 
 #include <iostream>
+double circle_area( double r)
+{
+    const double PI = 3.142;
+
+    return r*r*PI;
+
+}
 
 int main(int argc, char *argv[])
 {  
@@ -19,9 +26,9 @@ int main(int argc, char *argv[])
     std::cout << "Enter the radius of the circle: ";
     std::cin >> r;
 
-    area = PI * r* r;
+    area = circle_area(r);
 
-    std::cout << "The radius of the circle is: " << area << std::endl;
+    std::cout << "The area of the circle is: " << area << std::endl;
 
     return 0;
 
