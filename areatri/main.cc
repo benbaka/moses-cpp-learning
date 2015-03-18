@@ -9,6 +9,12 @@
 
 #include <iostream>
 
+int calc_area( int width, int height)
+{
+    return (width * height)/2;
+
+}
+
 
 int main ( int argc, char *argv[])
 {
@@ -22,7 +28,7 @@ int main ( int argc, char *argv[])
     std::cout <<"Enter the width"<< std::endl;
     std::cin >> width;
 
-    area = (height * width)/2;
+    area = calc_area(width, height);
 
     std::cout << "The area of the triangle is :"<< area << std::endl;
 
