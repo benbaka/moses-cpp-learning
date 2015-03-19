@@ -31,12 +31,11 @@ double circle_area( double r)
 int main(int argc, char *argv[])
 {  
 
-    double r;
     double area;
     double radius;
 
      radius = read_double("Enter radius");
-     area = circle_area(r);
+     area = circle_area(radius);
 
     std::cout << "The area of the circle is: " << area << std::endl;
 
