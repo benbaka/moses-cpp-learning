@@ -11,7 +11,7 @@ class Point
         void set_x(double x);
 
         double y();
-        void get_y(double y);
+        void set_y(double y);
 
     private:
         double m_x;
