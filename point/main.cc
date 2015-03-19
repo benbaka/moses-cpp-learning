@@ -3,18 +3,20 @@
 
 class Point
 {
-    double m_x;
-    double m_y;
-
     public:
-        Point();
-        Point(double x, double y);
 
-        void set_x(double , double );
-        int get_x();
+        point();
 
-        void set_y(double , double );
-        int get_y();
+        double  x();
+        void set_x(double x);
+
+        double y();
+        void get_y(double y);
+
+    private:
+        double m_x;
+        double m_y;
+
 
 };
 int Point::get_x()
@@ -24,6 +26,22 @@ int Point::get_x()
 int Point::get_y()
 {
     return m_x;
+}
+int Point::Point()
+{
+    return
+}
+int Point:: Point(double,double)
+{
+    return 0;
+}
+int set_x(double, double)
+{
+    return m_x;
+}
+int set_y(double, double)
+{
+    return m_y;
 }
 
 
