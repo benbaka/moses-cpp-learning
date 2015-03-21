@@ -1,3 +1,13 @@
+/*
+ * Args - Programs that calculates the number od inputs.
+ *
+ * Author - Moses Olawoyin <m.bastford@gmail.com>
+ *
+ * Date - March 20th, 2015.
+ *
+ */
+
+
 #include <iostream>
 
 int main (int argc, char* argv[])
