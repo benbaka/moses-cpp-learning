@@ -1,3 +1,13 @@
+/*
+ * Xtable - Program that calculates a multiplication table from 1 t0 12.
+ *
+ * Author- Moses Olawoyin < m.bastford@gmail.com>
+ *
+ * Date -15 March 2015.
+ *
+ */
+
+
 #include <iostream>
 #include <iomanip>
 
