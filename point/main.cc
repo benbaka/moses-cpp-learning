@@ -18,9 +18,21 @@ class Point
 
 };
 
+double Point::x()
+{
+    return m_x;
+
+}
+
 void Point::set_x(double x)
 {
      m_x = x;
+}
+
+double Point::y()
+{
+    return m_y;
+
 }
 
 void Point::set_y(double y)
@@ -47,7 +59,8 @@ int main (int argc, char* argv[])
 {
     Point p1;
     p1.set_x(4);
-    p1.set_y(6);
+    p1.set_y(5);
+    
 
     std::cout << " Point x is: " << p1.set_x <<std::endl;
     std::cout << " Point y is: " << p1.set_y << std::endl;
