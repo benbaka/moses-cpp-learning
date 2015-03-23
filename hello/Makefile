@@ -1,4 +1,5 @@
 CXX = c++
+CXXFLAGS = -Wall
 
 all:
-	$(CXX) -o hello main.cc
+	$(CXX) $(CXXFLAGS) -o hello main.cc
