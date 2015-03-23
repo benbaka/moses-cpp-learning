@@ -1,5 +1,10 @@
-CXX = c++
-CXXFLAGS = -Wall
+DEPS := $(wildcard *.h)
+SRC  := $(wildcard *.cc)
+OBJ  := $(wildcard *.o)
+APP  := $(notdir $(CURDIR))
 
-all:
-	$(CXX) $(CXXFLAGS) -o hello main.cc
+
+
+
+all: $(DEPS) $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(APP)  $(SRC)
