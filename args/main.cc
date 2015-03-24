@@ -1,5 +1,5 @@
 /*
- * Args - Programs that calculates the number od inputs.
+ * Word count - Programs that calculates the number of inputs.
  *
  * Author - Moses Olawoyin <m.bastford@gmail.com>
  *
@@ -11,8 +11,15 @@
 #include <iostream>
 
 int main (int argc, char* argv[])
+
 {
-    std::cout << "The number of the line is: " << argc<< argv[0] << std::endl;
+    int i;
+    std::cout << "I got " << argc -1 << " Command-line arguments.They are:"<< std::endl;
+    
+    for( int i = 1; i<argc; ++i)
+    {
+        std::cout << i <<"."<< argv[i]<<std::endl;
+    }
 
 
     return 0;
