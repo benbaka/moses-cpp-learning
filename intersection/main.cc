@@ -1,5 +1,19 @@
 #include <iostream>
 
+double line_is_horizontal( double y1, double y2)
+{
+
+    if(line_is_horizontal(y1,y2))
+    {
+        std::cout << "y = " << y1 << std::endl;
+    }
+    else
+    {
+        std::cout << "the line is not horizontal" << std::endl;
+    }
+    return y1;
+}
+
 int main ( int argc, char * argv[])
 {
     double x1;
