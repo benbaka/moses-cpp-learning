@@ -9,6 +9,7 @@
 
 
 #include <iostream>
+#include <iomanip>
 
 int main (int argc, char* argv[])
 
@@ -16,9 +17,9 @@ int main (int argc, char* argv[])
     int i;
     std::cout << "I got " << argc -1 << " Command-line arguments.They are:"<< std::endl;
     
-    for( int i = 1; i<argc; ++i)
+    for( int i = 1; i < argc; ++i)
     {
-        std::cout << i <<"."<< argv[i]<<std::endl;
+        std::cout <<std::setw(3)<< i <<". " << argv[i] << std::endl;
     }
 
 
