@@ -1,6 +1,19 @@
 #include <iostream>
 #include <cmath>
 
+double line_is_horizontal(double)
+{
+    if(line_is_horizontal(y1,y2))
+    {
+        std::cout << "y =" << y1 << std::endl
+
+    }
+    else
+    {
+
+    }
+}
+
 int main(int argc, char *argv[])
 {
     double x1;
@@ -22,8 +35,9 @@ int main(int argc, char *argv[])
     std::cout <<"Enter y2: " ;
     std::cin >> y2;
 
-    if(y1 == y2)
+    if(y1== y2)
     {
+
         std::cout << "y = " << y1 << std::endl;
     }
     else if(x1 == x2)
